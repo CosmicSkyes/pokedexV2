@@ -30,7 +30,7 @@ struct ContentView: View {
         }
     }
 }
-
+//need to add black bacground with red borders
 #Preview {
     ContentView()
 }

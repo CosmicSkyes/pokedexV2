@@ -22,7 +22,7 @@ struct SwiftUIView: View {
         }.background(.black)
     }
 }
-
+//need to add a design akin to oras
 #Preview {
     SwiftUIView(pokemon: MissingNo)
 }
