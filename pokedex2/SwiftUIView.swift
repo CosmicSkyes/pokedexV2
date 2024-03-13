@@ -9,14 +9,24 @@ import SwiftUI
 
 struct SwiftUIView: View {
     var pokemon: Pokemon
+  
     var body: some View {
-        
+
         ZStack {
             Color.red
                 .ignoresSafeArea()
             VStack {
                 Image("\(pokemon.pokedexNumber)")
-                Text(pokemon.Name)
+                    .resizable()
+                    .scaledToFill()
+                HStack {
+                    Text("#\(pokemon.pokedexNumber)")
+                        .font(.system(size: 40))
+                    Text(pokemon.Name)
+                        .font(.system(size: 40))
+                    
+                }
+
                 
             }
         }.background(.black)

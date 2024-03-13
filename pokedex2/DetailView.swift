@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct DetailView: View {
+    
     var pokemon: Pokemon
+   
     var body: some View {
+        
         ZStack {
+        
             Color.red
                                 .ignoresSafeArea()
             ScrollView {
@@ -19,8 +23,9 @@ struct DetailView: View {
                     Text(pokemon.Name)
                                                 .bold()
                                                 .font(.largeTitle)
-                    Text("\(pokemon.pokedexNumber)")
+                    Text("#\(pokemon.pokedexNumber)")
                         .bold()
+                        .font(.system(size: 25))
                         
                     Image("\(pokemon.pokedexNumber)")
                         .resizable()
@@ -30,14 +35,16 @@ struct DetailView: View {
                         VStack {
                             Text("Wieght")
                                 .bold()
-                                .font(.subheadline)
+                                .font(.system(size: 30))
                             Text(pokemon.Wieght)
+                                .font(.system(size: 25))
                         }
                         VStack {
                             Text("Hieght")
                                 .bold()
-                                .font(.subheadline)
+                                .font(.system(size: 30))
                             Text(pokemon.Hieght)
+                                .font(.system(size: 25))
                         }
                     }
                     Spacer()
@@ -45,28 +52,31 @@ struct DetailView: View {
                     Spacer()
                     Text("Typing")
                         .bold()
-                        .font(.subheadline)
+                        .font(.system(size: 30))
                     Text(pokemon.types)
-                    Spacer()
-                    Spacer()
-                    Spacer()
+                        .font(.system(size: 25))
 
+                    Spacer()
+                    Spacer()
+                    Spacer()
                     Text("desc")
                         .bold()
-                        .font(.subheadline)
+                        .font(.system(size: 30))
                     Text(pokemon.DexEntry)
+                        .font(.system(size: 25))
                     Spacer()
                     Spacer()
                     Spacer()
 
                     Text("routes found")
                         .bold()
-                        .font(.subheadline)
+                        .font(.system(size: 30))
                     Text(pokemon.RoutesFound)
+                        .font(.system(size: 25))
                     
 
                 }
-            }
+            }.background(Color.red)
         }
     }
 }

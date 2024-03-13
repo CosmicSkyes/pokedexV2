@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0400E72BA211F300EF6029 /* DualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0400E62BA211F300EF6029 /* DualView.swift */; };
 		DB32826A2BA0BD8000E35301 /* pokedex2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3282692BA0BD8000E35301 /* pokedex2App.swift */; };
 		DB32826C2BA0BD8000E35301 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB32826B2BA0BD8000E35301 /* ContentView.swift */; };
 		DB32826E2BA0BD8300E35301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB32826D2BA0BD8300E35301 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB0400E62BA211F300EF6029 /* DualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualView.swift; sourceTree = "<group>"; };
 		DB3282662BA0BD8000E35301 /* pokedex2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB3282692BA0BD8000E35301 /* pokedex2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokedex2App.swift; sourceTree = "<group>"; };
 		DB32826B2BA0BD8000E35301 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				DB3282692BA0BD8000E35301 /* pokedex2App.swift */,
 				DB32826B2BA0BD8000E35301 /* ContentView.swift */,
+				DB0400E62BA211F300EF6029 /* DualView.swift */,
 				DB3282932BA0BD9100E35301 /* ComplexData.swift */,
 				DB3282952BA0BDAD00E35301 /* SwiftUIView.swift */,
 				DB3282972BA0BDC600E35301 /* DetailView.swift */,
@@ -268,6 +271,7 @@
 			files = (
 				DB32826C2BA0BD8000E35301 /* ContentView.swift in Sources */,
 				DB32826A2BA0BD8000E35301 /* pokedex2App.swift in Sources */,
+				DB0400E72BA211F300EF6029 /* DualView.swift in Sources */,
 				DB3282962BA0BDAD00E35301 /* SwiftUIView.swift in Sources */,
 				DB3282982BA0BDC600E35301 /* DetailView.swift in Sources */,
 				DB3282942BA0BD9100E35301 /* ComplexData.swift in Sources */,

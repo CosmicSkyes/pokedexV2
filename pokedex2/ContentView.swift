@@ -9,24 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            Color.black
-                .ignoresSafeArea()
-            NavigationView {
-                VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 5) {
-                        List(kantoPokemon){
-                            pokemon_l in
-                            NavigationLink {
-                                DetailView(pokemon: pokemon_l)
-                            } label: {
-                                SwiftUIView(pokemon: pokemon_l)
-                            }
+        HStack {
+            ZStack {
+                Color.black
+                    .ignoresSafeArea()
+                NavigationView {
+                    VStack(alignment: .center, spacing: 5) {
+                            List(kantoPokemon){
+                                pokemon_l in
+                                NavigationLink {
+                                    DetailView(pokemon: pokemon_l)
+                                } label: {
+                                    SwiftUIView(pokemon: pokemon_l)
+                                }
 
+                            }
                         }
-                    }
+                     
+                }
                 
             }
-            
         }
     }
 }
