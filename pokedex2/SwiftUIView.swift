@@ -11,25 +11,33 @@ struct SwiftUIView: View {
     var pokemon: Pokemon
   
     var body: some View {
-
+        
         ZStack {
-            Color.red
-                .ignoresSafeArea()
+            //  Color.red
+            //    .ignoresSafeArea()
             VStack {
-                Image("\(pokemon.pokedexNumber)")
-                    .resizable()
-                    .scaledToFill()
+                ZStack {
+                    Image("ball2")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 500,height: 500)
+                    //                        .cornerRadius(100.0)
+                    Image("\(pokemon.pokedexNumber)")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 400,height: 400)
+                }
                 HStack {
                     Text("#\(pokemon.pokedexNumber)")
-                        .font(.system(size: 40))
+                        .font(.system(size: 35))
                     Text(pokemon.Name)
-                        .font(.system(size: 40))
+                        .font(.system(size: 35))
                     
                 }
-
+                
                 
             }
-        }.background(.black)
+        }
     }
 }
 //need to add a design akin to oras
