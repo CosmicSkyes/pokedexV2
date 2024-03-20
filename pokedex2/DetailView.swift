@@ -23,10 +23,12 @@ struct DetailView: View {
                     Text(pokemon.Name)
                         .bold()
                         .font(.largeTitle)
+                        .foregroundStyle(.white)
                     
                     Text("#\(pokemon.pokedexNumber)")
                         .bold()
                         .font(.system(size: 20))
+                        .foregroundStyle(.white)
                     ZStack {
                             Image("ball2")
                             .resizable()
@@ -48,17 +50,22 @@ struct DetailView: View {
                                 Text("Wieght")
                                     .bold()
                                     .font(.system(size: 30))
+                                    .foregroundStyle(.red)
                                 Text(pokemon.Weight)
                                     .font(.system(size: 20))
                                     .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
+                                    .foregroundColor(.red)
                             }
+                           
                             VStack {
                                 Text("Hieght")
                                     .bold()
                                     .font(.system(size: 30))
+                                    .foregroundStyle(.red)
                                 Text(pokemon.Height)
                                     .font(.system(size: 20))
                                 .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
+                                .foregroundStyle(.red)
                             }
                         }
                     }
@@ -68,9 +75,11 @@ struct DetailView: View {
                     Text("Typing")
                         .bold()
                         .font(.system(size: 30))
+                        .foregroundStyle(.red)
                     Text(pokemon.types)
                         .font(.system(size: 20))
                         .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
+                        .foregroundStyle(.red)
                     
                     Spacer()
                     Spacer()
@@ -78,9 +87,11 @@ struct DetailView: View {
                     Text("desc")
                         .bold()
                         .font(.system(size: 30))
+                        .foregroundStyle(.red)
                     Text(pokemon.DexEntry)
                         .font(.system(size: 20))
                         .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
+                        .foregroundStyle(.red)
                     Spacer()
                     Spacer()
                     Spacer()
@@ -89,11 +100,11 @@ struct DetailView: View {
                         .bold()
                         .font(.system(size: 30))
                         .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
-                    
+                        .foregroundStyle(.red)
                     Text(pokemon.RoutesFound)
                         .font(.system(size: 20))
                         .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
-
+                        .foregroundStyle(.red)
                 }.background(Color.white)
             }.background(Color.red)
         }

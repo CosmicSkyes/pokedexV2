@@ -29,9 +29,9 @@ struct SwiftUIView: View {
                 }
                 HStack {
                     Text("#\(pokemon.pokedexNumber)")
-                        .font(.system(size: 35))
+                        .font(.system(size: 30))
                     Text(pokemon.Name)
-                        .font(.system(size: 35))
+                        .font(.system(size: 30))
                     
                 }
                 
