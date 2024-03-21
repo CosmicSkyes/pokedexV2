@@ -18,6 +18,12 @@
 		DB3282942BA0BD9100E35301 /* ComplexData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3282932BA0BD9100E35301 /* ComplexData.swift */; };
 		DB3282962BA0BDAD00E35301 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3282952BA0BDAD00E35301 /* SwiftUIView.swift */; };
 		DB3282982BA0BDC600E35301 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3282972BA0BDC600E35301 /* DetailView.swift */; };
+		DB7CE7332BACB0DA00E8B91B /* Ketchum.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB7CE7322BACB0DA00E8B91B /* Ketchum.otf */; };
+		DB7CE7342BACB0DA00E8B91B /* Ketchum.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB7CE7322BACB0DA00E8B91B /* Ketchum.otf */; };
+		DB7CE7352BACB0DA00E8B91B /* Ketchum.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB7CE7322BACB0DA00E8B91B /* Ketchum.otf */; };
+		DB7CE7382BACB17B00E8B91B /* Pokemon Classic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB7CE7372BACB17B00E8B91B /* Pokemon Classic.ttf */; };
+		DB7CE7392BACB17B00E8B91B /* Pokemon Classic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB7CE7372BACB17B00E8B91B /* Pokemon Classic.ttf */; };
+		DB7CE73A2BACB17B00E8B91B /* Pokemon Classic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB7CE7372BACB17B00E8B91B /* Pokemon Classic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,9 @@
 		DB3282932BA0BD9100E35301 /* ComplexData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexData.swift; sourceTree = "<group>"; };
 		DB3282952BA0BDAD00E35301 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		DB3282972BA0BDC600E35301 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DB7CE7322BACB0DA00E8B91B /* Ketchum.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ketchum.otf; sourceTree = "<group>"; };
+		DB7CE7362BACB0E700E8B91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB7CE7372BACB17B00E8B91B /* Pokemon Classic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Classic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +111,15 @@
 		DB3282682BA0BD8000E35301 /* pokedex2 */ = {
 			isa = PBXGroup;
 			children = (
+				DB7CE7362BACB0E700E8B91B /* Info.plist */,
 				DB3282692BA0BD8000E35301 /* pokedex2App.swift */,
 				DB32826B2BA0BD8000E35301 /* ContentView.swift */,
 				DB0400E62BA211F300EF6029 /* DualView.swift */,
 				DB3282932BA0BD9100E35301 /* ComplexData.swift */,
 				DB3282952BA0BDAD00E35301 /* SwiftUIView.swift */,
 				DB3282972BA0BDC600E35301 /* DetailView.swift */,
+				DB7CE7372BACB17B00E8B91B /* Pokemon Classic.ttf */,
+				DB7CE7322BACB0DA00E8B91B /* Ketchum.otf */,
 				DB32826D2BA0BD8300E35301 /* Assets.xcassets */,
 				DB32826F2BA0BD8300E35301 /* Preview Content */,
 			);
@@ -243,7 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7CE7332BACB0DA00E8B91B /* Ketchum.otf in Resources */,
 				DB3282712BA0BD8300E35301 /* Preview Assets.xcassets in Resources */,
+				DB7CE7382BACB17B00E8B91B /* Pokemon Classic.ttf in Resources */,
 				DB32826E2BA0BD8300E35301 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +266,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7CE7392BACB17B00E8B91B /* Pokemon Classic.ttf in Resources */,
+				DB7CE7342BACB0DA00E8B91B /* Ketchum.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +275,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7CE73A2BACB17B00E8B91B /* Pokemon Classic.ttf in Resources */,
+				DB7CE7352BACB0DA00E8B91B /* Ketchum.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +458,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"pokedex2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pokedex2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -468,6 +487,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"pokedex2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pokedex2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

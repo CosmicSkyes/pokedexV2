@@ -22,12 +22,12 @@ struct DetailView: View {
                 VStack{
                     Text(pokemon.Name)
                         .bold()
-                        .font(.largeTitle)
+                        .font(.custom("Ketchum", size: 50))
                         .foregroundStyle(.white)
                     
                     Text("#\(pokemon.pokedexNumber)")
                         .bold()
-                        .font(.system(size: 20))
+                        .font(.custom("Ketchum", size: 30))
                         .foregroundStyle(.white)
                     ZStack {
                             Image("ball2")
@@ -49,23 +49,21 @@ struct DetailView: View {
                             VStack {
                                 Text("Wieght")
                                     .bold()
-                                    .font(.system(size: 30))
-                                    .foregroundStyle(.red)
+                                    .font(.custom("Pokemon Classic", size: 30))
+
+                                    
                                 Text(pokemon.Weight)
-                                    .font(.system(size: 20))
+                                    .font(.custom("Pokemon Classic", size: 15))
                                     .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
-                                    .foregroundColor(.red)
                             }
                            
                             VStack {
                                 Text("Hieght")
                                     .bold()
-                                    .font(.system(size: 30))
-                                    .foregroundStyle(.red)
+                                    .font(.custom("Pokemon Classic", size: 30))
                                 Text(pokemon.Height)
-                                    .font(.system(size: 20))
+                                    .font(.custom("Pokemon Classic", size: 15))
                                 .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
-                                .foregroundStyle(.red)
                             }
                         }
                     }
@@ -74,37 +72,32 @@ struct DetailView: View {
                     Spacer()
                     Text("Typing")
                         .bold()
-                        .font(.system(size: 30))
-                        .foregroundStyle(.red)
+                        .font(.custom("Pokemon Classic", size: 30))
                     Text(pokemon.types)
-                        .font(.system(size: 20))
+                        .font(.custom("Pokemon Classic", size: 15))
                         .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
-                        .foregroundStyle(.red)
                     
                     Spacer()
                     Spacer()
                     Spacer()
                     Text("desc")
                         .bold()
-                        .font(.system(size: 30))
-                        .foregroundStyle(.red)
+                        .font(.custom("Pokemon Classic", size: 30))
+                    
                     Text(pokemon.DexEntry)
-                        .font(.system(size: 20))
+                        .font(.custom("Pokemon Classic", size: 20))
                         .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
-                        .foregroundStyle(.red)
                     Spacer()
                     Spacer()
                     Spacer()
 
                     Text("routes found")
                         .bold()
-                        .font(.system(size: 30))
+                        .font(.custom("Pokemon Classic", size: 30))
                         .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
-                        .foregroundStyle(.red)
                     Text(pokemon.RoutesFound)
-                        .font(.system(size: 20))
+                        .font(.custom("Pokemon Classic", size: 20))
                         .padding(EdgeInsets(top: 0, leading: 75, bottom: 0, trailing: 75))
-                        .foregroundStyle(.red)
                 }.background(Color.white)
             }.background(Color.red)
         }
